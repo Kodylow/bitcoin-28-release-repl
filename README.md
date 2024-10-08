@@ -6,7 +6,7 @@ To take the maximal advantage of this upgrade, wallets and backends should integ
 
 bitcoin-cli submitpackage ‘[“<commitment_tx_hex>”, “<anchor_spend_hex>”]’
 
-This guide will go through some use cases of package relay and explain how they work.
+This guide will go through some use cases of both package relay and anchor outputs, and explain how they work.
 
 ## Guide Structure
 
