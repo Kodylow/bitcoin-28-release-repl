@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set variables
-VERSIONS=("28.0" "27.0")
+VERSIONS=("28.0")
 CHECKSUM_FILE="SHA256SUMS"
 
 # Detect architecture
