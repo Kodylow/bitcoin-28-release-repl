@@ -2,8 +2,8 @@
 
 # Define the directories to clear
 DIRS=(
-    "/home/runner/workspace/bitcoin-28.0-data"
-    "/home/runner/workspace/bitcoin-27.0-data"
+    "/home/runner/$REPL_SLUG/bitcoin-28.0-data"
+    "/home/runner/$REPL_SLUG/bitcoin-27.0-data"
 )
 
 # Function to clear a directory

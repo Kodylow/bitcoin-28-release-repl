@@ -1,4 +1,4 @@
-run = "direnv allow && /home/runner/workspace/scripts/run.sh"
+run = "direnv allow && /home/runner/$REPL_SLUG/scripts/run.sh"
 entrypoint = "README.md"
 
 [nix]

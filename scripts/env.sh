@@ -14,11 +14,11 @@ if [ ! -d "bitcoin-28.0" ]; then
 fi
 
 # Set aliases
-alias bitcoind='/home/runner/workspace/bitcoin-28.0/bin/bitcoind'
-alias bitcoin-cli='/home/runner/workspace/bitcoin-28.0/bin/bitcoin-cli'
-alias bitcoin-cli-28='/home/runner/workspace/bitcoin-28.0/bin/bitcoin-cli'
-alias bitcoind-28='/home/runner/workspace/bitcoin-28.0/bin/bitcoind -regtest'
-alias bitcoind-27='/home/runner/workspace/bitcoin-27.0/bin/bitcoind -regtest'
-alias bitcoin-cli-27='/home/runner/workspace/bitcoin-27.0/bin/bitcoin-cli'
+alias bitcoind='/home/runner/$REPL_SLUG/bitcoin-28.0/bin/bitcoind'
+alias bitcoin-cli='/home/runner/$REPL_SLUG/bitcoin-28.0/bin/bitcoin-cli'
+alias bitcoin-cli-28='/home/runner/$REPL_SLUG/bitcoin-28.0/bin/bitcoin-cli'
+alias bitcoind-28='/home/runner/$REPL_SLUG/bitcoin-28.0/bin/bitcoind -regtest'
+alias bitcoind-27='/home/runner/$REPL_SLUG/bitcoin-27.0/bin/bitcoind -regtest'
+alias bitcoin-cli-27='/home/runner/$REPL_SLUG/bitcoin-27.0/bin/bitcoin-cli'
 
 echo "Bitcoin development environment loaded"

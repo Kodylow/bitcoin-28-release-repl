@@ -20,7 +20,7 @@ fi
 if ! pgrep -x "bitcoind" > /dev/null; then
     # Run Bitcoin
     echo "Starting Bitcoin..."
-    exec /home/runner/workspace/bitcoin-28.0/bin/bitcoind -regtest
+    exec /home/runner/$REPL_SLUG/bitcoin-28.0/bin/bitcoind -regtest
 else
     echo "bitcoind is already running."
 fi
