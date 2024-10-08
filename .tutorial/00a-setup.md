@@ -14,8 +14,11 @@ The environment is managed using `flake.nix`. If you're using the Repl.it enviro
 
 For local development:
 
-1. Ensure you have Nix installed on your system.
-2. Navigate to the project directory.
+1. Ensure you have Nix installed on your system, if you don't use the determinate nix installer to get it: 
+```
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+```
+2. After nix is installed Navigate to this project directory.
 3. Run the following command to enter the development shell:
 
    ```
@@ -44,5 +47,11 @@ If you need to specify a particular version, you can use:
 - `bitcoin-cli-27` for version 27.0
 
 This allows you to easily compare behavior between versions when exploring new features.
+
+To start bitcoind on regtest in the background (which you'll need to have to run the examples) just run
+```
+bitcoind -regtest -daemon
+```
+Or if you want to be able to see logs just keep it running in another terminal without the daemon flag
 
 Now that your environment is set up, you're ready to explore the new features of Bitcoin Core 28.0!
