@@ -1,0 +1,920 @@
+~/workspace$ bitcoin-cli -regtest createwallet test
+bitcoin-cli: command not installed. Multiple versions of this command were found in Nix.
+Select one to run (or press Ctrl-C to cancel):
+~/workspace$ nix develop
+warning: Git tree '/home/runner/workspace' is dirty
+aliases set
+~/workspace$ bitcoin-cli -regtest createwallet test
+{
+  "name": "test"
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test getnewaddress
+bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test -generate 101
+{
+  "address": "bcrt1q9lhvgerldj8jhaj08hz85nkmxpcfrflat2q8lc",
+  "blocks": [
+    "0644db2cb7c2070a351438a9a5ea66e310252fbb4092c8e62bd30b7695b2f959",
+    "23752a85a47db287f8a02a83e14aeba7865059553b7f19301dbcce3df50d5fbe",
+    "6d88b1a0bc9c3b14bba94fbe5683ab74252e208753fc3b072423f520030d4d42",
+    "08aae640fadc14d2824de09485eb24fc6c241944cce93b216b66debe8a4c1717",
+    "088218fdb6d203cc67efd529d3fc2dce94cc4c21acabe64667c2bd8e1259ba26",
+    "4d7e25338d7608d536b41f8752a2c639925863e87ebf9ae3a20fa8101069b4f5",
+    "45eb328a0ba326fd63d7eeff92f53bdd3c88780ccf86eb95b500d89c36468ced",
+    "2b17c39435e8a0aeb1afa29e7bc3dc5f071bc1a7cf479f1b3ab7ccee05046fbc",
+    "4dcf161ac5da323e9bd23392a35a1d12918b0dda7236a22997581c64b161fcc1",
+    "05bd6babfde75ae2466d257e335779d8b368f056d8c8a7be14792fcd1f822b56",
+    "7997bcf40f425c60ab6ee8ec9f2573e19d2a95af4e36271ec6bd7499c2a946ef",
+    "153655b6a912f167c8e3ff5814738b39e9a93b3acd7a25d0de86450af501419e",
+    "57d08b62e0361a57e61cb3b9e38e6559b033b66ec858787f5710cfc4656da86b",
+    "2ff602e4351d4c4f0e03f3748a4c209559f0c5309f0f801dc3c40f463f0867e5",
+    "2371f74195b3c5a3bc1f2106f6cb7001fc56e0d7fa4802b0628ad33bba159ffd",
+    "679141118314d73d139c0a8ec4d90613352afffc89f2df73024ee6096af00836",
+    "6dbc542047ced464e14d68e09e4d1f2f791f198e7e9586386dcead7fb1a4ce7e",
+    "6a4dc31e3f93819dd286b425b70778755fa04d3ed596c2c113298d8146a937d8",
+    "296c778138799370e555df94972acb8a5582a23c36e0a78c20704a3dca6e4862",
+    "371741a1fb40d7ce0298a3281fed27fdcb37b01042151673d9cbea971118208e",
+    "3c1509adfa1c66d899a2fa78be1582d68a8cb1d4bdec265d08e63cc480e785a2",
+    "66a55831bd7983a21d39e371a8ef684a149bd9a82c1d6ea7417e72dcadd599f1",
+    "0bd3069f6ab887558b4641f0f3cde662fa449c0fbccd98cd10476ab511a6cd36",
+    "6f0f5c73ca536fe1d4886be1dd2859558368982f58ddc27af051e41077f01c00",
+    "2ff8fa7cc0c2caff3b0589adfd1c79c054209fcd00152eaf4b8ee8ea8a03e84e",
+    "7147d72ddaa0f0da7026e9f4af5db93d273440c1ab044f5611ef6571a8b3d6e8",
+    "3202afd67c164ad6ceba18f455bf0068a290ff5881df404b52291d503e1bd9a8",
+    "107dae9b20407b92cda5f542a1b1ceb33e42e26d2c56e49ef33f2af08de58295",
+    "0cc035ea08e824a3d63c8a0b95edf5935bfca26c8eb660c220d0f01edc54ebc4",
+    "653dd49f127ba74a389872b3bcdfb14d6beade10082a5c8aa6e9ba71f4631c67",
+    "7e2c44fcb3c9c5a44692e428420c7d34a89113c058ab3a03abbb8859ecac158b",
+    "2c9432eec6329e0b6fab13ad4e5554f7b8655f386500afecbdd75aaa6f386949",
+    "0f459dded852c23f0dcdf2b91def474af276ea67f4bb15584100c01e6347dde6",
+    "01d8c512371e73bbcb9ed9cf28097216fc066cb90b58a81d2b44e36bd216fc26",
+    "112ba5a3e941e947a80df02a44cfd5bac8d2d1bfb4bb5e8581ca3c99258d51cd",
+    "77f8d440a19cf5184c928ddb1335b579a811bbeef47566ac7494296b9361ad2c",
+    "588df3d8bb0d02aec8494f8ff5db11eda9e64f124c770992c2e312fdba8d0786",
+    "09c2d1ab979efe81bfce54c65db67b89e211b388edf09d0656b358a38791e253",
+    "623bfddfdd3329dc511f1e155272d7559f0476a736f326047c959c8d6b52d36a",
+    "100103005cec18650e604cd3fb401e868966f75bfef4e9c269c7a22de93ddf88",
+    "115afa682ab600b60b8a25be4516b8a39369ca43d5c5164e627692e4dad69bf2",
+    "038f2fd5ce8c771c49b6f3ad8a7ec23d13487d5704b918471f49e21b6a320824",
+    "5e012b1e465dd131f398d8099e8590c79a75a74e7e57350ea9327982d9b9d780",
+    "76a49b16147fcc9f3103de03acddf41824681ef5021a91425fcacea57ac4487e",
+    "48eda67ba5994c793053f21c807d4be74aac3934d187a94ca5cf9722eda8e87e",
+    "6df5e35acf54b68ba3dbb9f09c44a2a347e5d7c1162bba10dc0003b9b8ff9d26",
+    "338ed71b4f814d0c4e1d9bc97a29c88999fcac3a64b03a3db62ffe4387682a87",
+    "704a937736678be1dcac1397be95f7872a2dafccacdd69255006ea02350e7331",
+    "6d01981fc7f8ac30969a14830aecea33fd1cc684b49253f7051fa75e629e3dc8",
+    "0e94153bb3ad88857b13ad685df1fda292875cca0ddd7db78b03f57dfe72e21b",
+    "4fcbcc86569b1799ecfaf8399a4216d1ab8179f2babe920d1638d515abef7b2c",
+    "156f7ae649be87961c54ff80adcb3fa688bfebb87199fd27959636097ce3bbeb",
+    "680f6a529c27b2e82a486e2a84f7d49f81036f067d7bd58aed8afe4965f24399",
+    "270864c4d3ab448f8aa10c8ad6a6bb756c00ec3169a4acd67a18a4ef6a69dd5a",
+    "56aa4a183cce53a666ec69e149aed96b342d4c54dc8ad07dc959c140792f490d",
+    "5a0fcb5ba611cd7638b3c9f4c3df0345c08962472d55ec32b88a0d0bf236c482",
+    "05f71cb9d649fc973fa756a2fd7c98404153b4d00aa2749e2367197aba54ea8d",
+    "53580c995ac9353eca59aa5e090419b6f73744cc1cf177f4f2e5ff46aa00f5c5",
+    "0f66b25b551d5f9fbd5b7c701710189127d6084c2ce5999d01330764a39b4b44",
+    "7a4455ab42324744e2956c2637cc712d8d09fc89bca87a54c0332200f107bd1c",
+    "2892fee34b49199bcdca536a17afb6331c0fbe5121c3f05d3511b3c9f246161b",
+    "5522c10d10d44d08d2d33f1993e3399d6b1f12c5c08a394fd3888d3566015a65",
+    "6cc6835ef5c726b580eb5973a840a94bc0eddd4c89da1f4d191632601f3c1cff",
+    "444975685a501adfb52e6aaf031ff45e9718c55ec3d6bd908764d3d5fe275d4c",
+    "479e9220afd241391dd09d8330063bf422b6538b5e3a54eadab27272f9e3ac66",
+    "1894c40c8384b886f7eafefc5d43cc666054edb0d168b4bb73ad620cf6626820",
+    "724ffcd9aa333646e58246b23b8aaf1777f93b647b78140c9abfe565ac789d22",
+    "373e4cb848fee37d3ad9c72ceec871e05cc2416453ef91108157951ca81066d6",
+    "7382e7564d3462341789b8977887f8ed03b967e0be1d15c348f72d2f3a09c73b",
+    "22b5df0d49e904115996da525f8eed0ddd28ad8ce2989f89eabeed41014478a8",
+    "4f8ca1ae3a589ef1321d0292391e5bc235c808c3df134716f86e2f881f38ded1",
+    "038dceacd37192d2704fffd2bec157e7f016ef6d97484985a5633b31f09c9e63",
+    "008c68a612ff3c5f944c49a449042f3a32f62a64e43c2156db77582a28253304",
+    "0a6726e5e295d2d6f4eecae0f325804d28a1297dd0718b6d1553e1b92d72cf58",
+    "442392fbaec36eeb0c9ccd058b35ae924b2383e7b3b4f5df0a10b5b76c74e2c6",
+    "2c5dc949d440969dec65937f7f649ddd09318caba163268d26ff286933e1e3a6",
+    "2974c3f1556b7a0a1fe4b0828a763e26a87e49f0fd30a3979e5d4e8d747db04b",
+    "075f8b1ff691738dd92c02ea4d8e926a6e1e99de5d9c0a38b41746f91ab65228",
+    "718671a7ad50fc16f7ef1cda489b5135cb68939e9330b14829931f8dcb8a4186",
+    "35da5dd48a22e304686188dde7e59a6e99de292679f82dbe0e75e798b9e36ad4",
+    "77ac58c14140665c6ae14b870b18f3dfec80bd56cf76050dcdf976e94d600797",
+    "7fcedd44eb1602c8d2cbc3c9361fde2cdde99c1a75d934f3e37705a93c9c080a",
+    "0849cab3d8d6422245404bcb94fae30d156e71ea678937826d1e79643b955e51",
+    "1092bea14df6d992d0fee595c12f40c27d79156a8b3d8ee787b3dc22c974eeb4",
+    "188f330455a52e1d70176f213ef46e7f91ad954fdadd868eaddb6da46538d4b0",
+    "260290609586a3992c9e7fec528010b423fd1a32b91b3aabd0c28904525ad181",
+    "22bae60b2e101027abbe20799ce7bc9689d51a69a62d33489784365b456fc72e",
+    "650fc82c4628dddb19731b93111475ff2cabcc9678168e7ba014dfa29462c41e",
+    "53062eac523c44f33cc540343954eec8ef54172558068783849ef4b17d935520",
+    "732a6aa91cbf8d658923aa8c50be80be318cb248c9a9334a8ff2e68aeb7fc414",
+    "4b06f4f43fc697c3513789146a0679ea085d4c0c4f6316f8dc3f79165c580ad9",
+    "67a5e241dd80a93c6de0287e0ffd4b1d0119185bf8b09b5b8824154911bb15b7",
+    "1d3b0cda566b77afcfb33931fd0f79af934e9a7c33eb9c23ad7546a28cc22382",
+    "6f9994b4c37096d03b64ad2052bbede0f971761decda20321795838ecec61d47",
+    "2cac2abe92194ca5660198e91598aa69afa923d14e92c6d848b0dbc3d19a647b",
+    "0cbdea97e3e0d5aa5ef4196ba9b65902c40088494aaad584e4be9bfdbbbf6fe8",
+    "0d6c9d37e81137c313e0d466b845c05603562f3655f59f4eca0cce37fdc7888b",
+    "0b6f3586f314dc675260cbbad7c6a56d5d4393cacfec12edb48d996e93cb5a19",
+    "323cb054893847841576dccc2b25d3b252133d7dedabadce6b188a13c4e27104",
+    "348fab534855045033688815ae1398eb5f7ce1c1ef08a692e4751a851a55a512",
+    "47208e162ebe29c325b03fcf2919d939484fa36f2559103682cde15f3bd45514"
+  ]
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test listunspent
+[
+  {
+    "txid": "d1762b3a9c2f617ccef2d7e5d4f98416a81a85ae4cce4cc529b4836b50b3af55",
+    "vout": 0,
+    "address": "bcrt1q9lhvgerldj8jhaj08hz85nkmxpcfrflat2q8lc",
+    "label": "",
+    "scriptPubKey": "00142feec4647f6c8f2bf64f3dc47a4edb307091a7fd",
+    "amount": 50.00000000,
+    "confirmations": 101,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/1]025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c)#5c7kmqmx",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  }
+]
+~/workspace$ bitcoin-cli -regtest getmempoolinfo
+{
+  "loaded": true,
+  "size": 0,
+  "bytes": 0,
+  "usage": 0,
+  "total_fee": 0.00000000,
+  "maxmempool": 300000000,
+  "mempoolminfee": 0.00001000,
+  "minrelaytxfee": 0.00001000,
+  "incrementalrelayfee": 0.00001000,
+  "unbroadcastcount": 0,
+  "fullrbf": true
+}
+~/workspace$ bitcoin-cli -regtest listunspent
+[
+  {
+    "txid": "d1762b3a9c2f617ccef2d7e5d4f98416a81a85ae4cce4cc529b4836b50b3af55",
+    "vout": 0,
+    "address": "bcrt1q9lhvgerldj8jhaj08hz85nkmxpcfrflat2q8lc",
+    "label": "",
+    "scriptPubKey": "00142feec4647f6c8f2bf64f3dc47a4edb307091a7fd",
+    "amount": 50.00000000,
+    "confirmations": 101,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/1]025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c)#5c7kmqmx",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  }
+]
+~/workspace$ bitcoin-cli -regtest createrawtransaction '[{"txid": "d1762b3a9c2f617ccef2d7e5d4f98416a81a85ae4cce4cc529b4836b50b3af55", 
+> ^C
+~/workspace$ bitcoin-cli -regtest createrawtransaction '[{"txid": "d1762b3a9c2f617ccef2d7e5d4f98416a81a85ae4cce4cc529b4836b50b3af55", "vout": 0}]' '[{"bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94": 50}]'
+020000000155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test signrawtransactionwithwallet 020000000155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000
+{
+  "hex": "0200000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022005fda0331522afe7cb9067224b5d4b82de0f03bdc9964f8c19aaaae32d0428c802204ac532a536950db945d4c928bb9c8261cb32531066b446a9f802a1df14daff8c0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000",
+  "complete": true
+}
+~/workspace$ bitcoin-cli -regtest sendrawtransaction 0200000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022005fda0331522afe7cb9067224b5d4b82de0f03bdc9964f8c19aaaae32d0428c802204ac532a536950db945d4c928bb9c8261cb32531066b446a9f802a1df14daff8c0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000
+error code: -26
+error message:
+min relay fee not met, 0 < 110
+~/workspace$ bitcoin-cli -regtest decoderawtransaction 0300000000010155afb3506b83b42
+9c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a0100000
+0160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022005fda0331522afe7cb9067224
+b5d4b82de0f03bdc9964f8c19aaaae32d0428c802204ac532a536950db945d4c928bb9c8261cb3253106
+6b446a9f802a1df14daff8c0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c7
+73c91e93c00000000
+{
+  "txid": "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686",
+  "hash": "c6ea5f56fccd001b51c83b68a803a0e78dcfbb3d28f66548799dc98e08f17f5d",
+  "version": 3,
+  "size": 191,
+  "vsize": 110,
+  "weight": 437,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "d1762b3a9c2f617ccef2d7e5d4f98416a81a85ae4cce4cc529b4836b50b3af55",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "3044022005fda0331522afe7cb9067224b5d4b82de0f03bdc9964f8c19aaaae32d0428c802204ac532a536950db945d4c928bb9c8261cb32531066b446a9f802a1df14daff8c01",
+        "025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c"
+      ],
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 50.00000000,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "0 f0941d2107006b6ee0ab28c5403ec70026469f17",
+        "desc": "addr(bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94)#38lyz477",
+        "hex": "0014f0941d2107006b6ee0ab28c5403ec70026469f17",
+        "address": "bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94",
+        "type": "witness_v0_keyhash"
+      }
+    }
+  ]
+}
+~/workspace$ bitcoin-cli -regtest createrawtransaction '[{"txid": "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686", "vout": 0}]' '[{"bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94": 49.9999}]'
+02000000018616bb29336998d3bfb42b92862322885b2de4bcd290ca2d4c7776c4568bdfdc0000000000fdffffff01f0ca052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test signrawtransactionwithwallet 03000
+000018616bb29336998d3bfb42b92862322885b2de4bcd290ca2d4c7776c4568bdfdc0000000000fdfff
+fff01f0ca052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000
+{
+  "hex": "03000000018616bb29336998d3bfb42b92862322885b2de4bcd290ca2d4c7776c4568bdfdc0000000000fdffffff01f0ca052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000",
+  "complete": false,
+  "errors": [
+    {
+      "txid": "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686",
+      "vout": 0,
+      "witness": [
+      ],
+      "scriptSig": "",
+      "sequence": 4294967293,
+      "error": "Input not found or already spent"
+    }
+  ]
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test signrawtransactionwithwallet 03000000018616bb29336998d3bfb42b92862322885b2de4bcd290ca2d4c7776c4568bdfdc0000000000fdffffff01f0ca052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000 '[{"txid": "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686", "vout": 0, "scriptPubKey": "0014f0941d2107006b6ee0ab28c5403ec70026469f17", "amount": 50}]'
+{
+  "hex": "030000000001018616bb29336998d3bfb42b92862322885b2de4bcd290ca2d4c7776c4568bdfdc0000000000fdffffff01f0ca052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022002f370569ef0948becb18eebf8baeb9462864646f9ec44ffcc713a3ba01861ec02207d014729b38d47157012fe5299efc2f0b3dce392db3d911cdfbb9cfb03bc0d8c012102a61d64c7e9f94af0627c717f20d87fdc2492c1adf31d750f049703369e21ee8000000000",
+  "complete": true
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test submitpackage '["0300000000010155afb3506b83b42
+9c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a0100000 
+0160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022005fda0331522afe7cb9067224 
+b5d4b82de0f03bdc9964f8c19aaaae32d0428c802204ac532a536950db945d4c928bb9c8261cb3253106 
+6b446a9f802a1df14daff8c0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c7 
+73c91e93c00000000^C
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test submitpackage '["0300000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022005fda0331522afe7cb9067224b5d4b82de0f03bdc9964f8c19aaaae32d0428c802204ac532a536950db945d4c928bb9c8261cb32531066b446a9f802a1df14daff8c0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000", "030000000001018616bb29336998d3bfb42b92862322885b2de4bcd290ca2d4c7776c4568bdfdc0000000000fdffffff01f0ca052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022002f370569ef0948becb18eebf8baeb9462864646f9ec44ffcc713a3ba01861ec02207d014729b38d47157012fe5299efc2f0b3dce392db3d911cdfbb9cfb03bc0d8c012102a61d64c7e9f94af0627c717f20d87fdc2492c1adf31d750f049703369e21ee8000000000"]'
+{
+  "package_msg": "transaction failed",
+  "tx-results": {
+    "c6ea5f56fccd001b51c83b68a803a0e78dcfbb3d28f66548799dc98e08f17f5d": {
+      "txid": "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686",
+      "error": "mandatory-script-verify-flag-failed (Signature must be zero for failed CHECK(MULTI)SIG operation)"
+    },
+    "d2a5d4bb9a83f8dc5db77e0231caf8bd1d78a8ba318cdb3045ccc1d12beaa4ee": {
+      "txid": "f702f1ea070cce7f94911a26237b32b22bc34e8a98e2dbbf198c2335ee173ee6",
+      "error": "bad-txns-inputs-missingorspent"
+    }
+  },
+  "replaced-transactions": [
+  ]
+}
+~/workspace$ bitcoin-cli listunspent
+error: timeout on transient error: Could not connect to the server 127.0.0.1:8332
+
+Make sure the bitcoind server is running and that you are connecting to the correct RPC port.
+Use "bitcoin-cli -help" for more info.
+~/workspace$ bitcoin-cli -regtest listunspent
+[
+  {
+    "txid": "d1762b3a9c2f617ccef2d7e5d4f98416a81a85ae4cce4cc529b4836b50b3af55",
+    "vout": 0,
+    "address": "bcrt1q9lhvgerldj8jhaj08hz85nkmxpcfrflat2q8lc",
+    "label": "",
+    "scriptPubKey": "00142feec4647f6c8f2bf64f3dc47a4edb307091a7fd",
+    "amount": 50.00000000,
+    "confirmations": 101,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/1]025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c)#5c7kmqmx",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  }
+]
+~/workspace$ bitcoin-cli -regtest createrawtransaction '[{"txid": "d1762b3a9c2f617ccef2d7e5d4f98416a81a85ae4cce4cc529b4836b50b3af55", "vout": 0}]' '[{"bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94": 50}]'
+020000000155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test signrawtransactionwithwallet 030000000155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000
+{
+  "hex": "0300000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022032fddaaba5b29413a038ef300cbadadf3374fa91acf0fe57170bc85bd4ca967d02206317854d5bff1200ffddded6dedf6d6a5783bbfdfc62e72d7713fb575c4d5f620121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000",
+  "complete": true
+}
+~/workspace$ bitcoin-cli -regtest decoderawtransaction 0300000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022032fddaaba5b29413a038ef300cbadadf3374fa91acf0fe57170bc85bd4ca967d02206317854d5bff1200ffddded6dedf6d6a5783bbfdfc62e72d7713fb575c4d5f620121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000
+{
+  "txid": "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686",
+  "hash": "5593c5fff4dcfb088a90a71260c3007d92d8e99cfa91a8d00e90a512e84ce8fa",
+  "version": 3,
+  "size": 191,
+  "vsize": 110,
+  "weight": 437,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "d1762b3a9c2f617ccef2d7e5d4f98416a81a85ae4cce4cc529b4836b50b3af55",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "3044022032fddaaba5b29413a038ef300cbadadf3374fa91acf0fe57170bc85bd4ca967d02206317854d5bff1200ffddded6dedf6d6a5783bbfdfc62e72d7713fb575c4d5f6201",
+        "025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c"
+      ],
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 50.00000000,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "0 f0941d2107006b6ee0ab28c5403ec70026469f17",
+        "desc": "addr(bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94)#38lyz477",
+        "hex": "0014f0941d2107006b6ee0ab28c5403ec70026469f17",
+        "address": "bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94",
+        "type": "witness_v0_keyhash"
+      }
+    }
+  ]
+}
+~/workspace$ bitcoin-cli -regtest createrawtransaction '[{"txid": "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686", "vout": 0}]' '[{"bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94": 49.9999}]'
+02000000018616bb29336998d3bfb42b92862322885b2de4bcd290ca2d4c7776c4568bdfdc0000000000fdffffff01f0ca052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test signrawtransactionwithwallet 03000000018616bb29336998d3bfb42b92862322885b2de4bcd290ca2d4c7776c4568bdfdc0000000000fdffffff01f0ca052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000 '[{"txid
+": "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686", "vout": 0, "s
+criptPubKey": "0014f0941d2107006b6ee0ab28c5403ec70026469f17", "amount": 50}]'
+{
+  "hex": "030000000001018616bb29336998d3bfb42b92862322885b2de4bcd290ca2d4c7776c4568bdfdc0000000000fdffffff01f0ca052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022002f370569ef0948becb18eebf8baeb9462864646f9ec44ffcc713a3ba01861ec02207d014729b38d47157012fe5299efc2f0b3dce392db3d911cdfbb9cfb03bc0d8c012102a61d64c7e9f94af0627c717f20d87fdc2492c1adf31d750f049703369e21ee8000000000",
+  "complete": true
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test submitpackage '["0300000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022032fddaaba5b29413a038ef300cbadadf3374fa91acf0fe57170bc85bd4ca967d02206317854d5bff1200ffddded6dedf6d6a5783bbfdfc62e72d7713fb575c4d5f620121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000", "030000000001018616bb29336998d3bfb42b92862322885b2de4bcd290ca2d4c7776c4568bdfdc0000000000fdffffff01f0ca052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022002f370569ef0948becb18eebf8baeb9462864646f9ec44ffcc713a3ba01861ec02207d014729b38d47157012fe5299efc2f0b3dce392db3d911cdfbb9cfb03bc0d8c012102a61d64c7e9f94af0627c717f20d87fdc2492c1adf31d750f049703369e21ee8000000000"]'
+{
+  "package_msg": "success",
+  "tx-results": {
+    "5593c5fff4dcfb088a90a71260c3007d92d8e99cfa91a8d00e90a512e84ce8fa": {
+      "txid": "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686",
+      "vsize": 110,
+      "fees": {
+        "base": 0.00000000,
+        "effective-feerate": 0.00045454,
+        "effective-includes": [
+          "5593c5fff4dcfb088a90a71260c3007d92d8e99cfa91a8d00e90a512e84ce8fa",
+          "d2a5d4bb9a83f8dc5db77e0231caf8bd1d78a8ba318cdb3045ccc1d12beaa4ee"
+        ]
+      }
+    },
+    "d2a5d4bb9a83f8dc5db77e0231caf8bd1d78a8ba318cdb3045ccc1d12beaa4ee": {
+      "txid": "f702f1ea070cce7f94911a26237b32b22bc34e8a98e2dbbf198c2335ee173ee6",
+      "vsize": 110,
+      "fees": {
+        "base": 0.00010000,
+        "effective-feerate": 0.00045454,
+        "effective-includes": [
+          "5593c5fff4dcfb088a90a71260c3007d92d8e99cfa91a8d00e90a512e84ce8fa",
+          "d2a5d4bb9a83f8dc5db77e0231caf8bd1d78a8ba318cdb3045ccc1d12beaa4ee"
+        ]
+      }
+    }
+  },
+  "replaced-transactions": [
+  ]
+}
+~/workspace$ bitcoin-cli -regtest getrawmempool
+[
+  "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686",
+  "f702f1ea070cce7f94911a26237b32b22bc34e8a98e2dbbf198c2335ee173ee6"
+]
+~/workspace$ bitcoin-cli -regtest gettransaction dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686
+{
+  "amount": 0.00000000,
+  "fee": 0.00000000,
+  "confirmations": 0,
+  "trusted": true,
+  "txid": "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686",
+  "wtxid": "5593c5fff4dcfb088a90a71260c3007d92d8e99cfa91a8d00e90a512e84ce8fa",
+  "walletconflicts": [
+  ],
+  "mempoolconflicts": [
+  ],
+  "time": 1728358915,
+  "timereceived": 1728358915,
+  "bip125-replaceable": "yes",
+  "details": [
+    {
+      "address": "bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94",
+      "category": "send",
+      "amount": -50.00000000,
+      "label": "",
+      "vout": 0,
+      "fee": 0.00000000,
+      "abandoned": false
+    },
+    {
+      "address": "bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94",
+      "parent_descs": [
+        "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+      ],
+      "category": "receive",
+      "amount": 50.00000000,
+      "label": "",
+      "vout": 0,
+      "abandoned": false
+    }
+  ],
+  "hex": "0300000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022032fddaaba5b29413a038ef300cbadadf3374fa91acf0fe57170bc85bd4ca967d02206317854d5bff1200ffddded6dedf6d6a5783bbfdfc62e72d7713fb575c4d5f620121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000",
+  "lastprocessedblock": {
+    "hash": "47208e162ebe29c325b03fcf2919d939484fa36f2559103682cde15f3bd45514",
+    "height": 101
+  }
+}
+~/workspace$ bitcoin-cli -regtest decoderawtransaction 0300000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0100f2052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022032fddaaba5b29413a038ef300cbadadf3374fa91acf0fe57170bc85bd4ca967d02206317854d5bff1200ffddded6dedf6d6a5783bbfdfc62e72d7713fb575c4d5f620121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000
+{
+  "txid": "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686",
+  "hash": "5593c5fff4dcfb088a90a71260c3007d92d8e99cfa91a8d00e90a512e84ce8fa",
+  "version": 3,
+  "size": 191,
+  "vsize": 110,
+  "weight": 437,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "d1762b3a9c2f617ccef2d7e5d4f98416a81a85ae4cce4cc529b4836b50b3af55",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "3044022032fddaaba5b29413a038ef300cbadadf3374fa91acf0fe57170bc85bd4ca967d02206317854d5bff1200ffddded6dedf6d6a5783bbfdfc62e72d7713fb575c4d5f6201",
+        "025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c"
+      ],
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 50.00000000,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "0 f0941d2107006b6ee0ab28c5403ec70026469f17",
+        "desc": "addr(bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94)#38lyz477",
+        "hex": "0014f0941d2107006b6ee0ab28c5403ec70026469f17",
+        "address": "bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94",
+        "type": "witness_v0_keyhash"
+      }
+    }
+  ]
+}
+~/workspace$ bitcoin-cli -regtest getrawmempool
+[
+  "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686",
+  "f702f1ea070cce7f94911a26237b32b22bc34e8a98e2dbbf198c2335ee173ee6"
+]
+~/workspace$ bitcoin-cli -regtest gettransaction f702f1ea070cce7f94911a26237b32b22bc34e8a98e2dbbf198c2335ee173ee6
+{
+  "amount": 0.00000000,
+  "fee": -0.00010000,
+  "confirmations": 0,
+  "trusted": true,
+  "txid": "f702f1ea070cce7f94911a26237b32b22bc34e8a98e2dbbf198c2335ee173ee6",
+  "wtxid": "d2a5d4bb9a83f8dc5db77e0231caf8bd1d78a8ba318cdb3045ccc1d12beaa4ee",
+  "walletconflicts": [
+  ],
+  "mempoolconflicts": [
+  ],
+  "time": 1728358915,
+  "timereceived": 1728358915,
+  "bip125-replaceable": "yes",
+  "details": [
+    {
+      "address": "bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94",
+      "category": "send",
+      "amount": -49.99990000,
+      "label": "",
+      "vout": 0,
+      "fee": -0.00010000,
+      "abandoned": false
+    },
+    {
+      "address": "bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94",
+      "parent_descs": [
+        "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+      ],
+      "category": "receive",
+      "amount": 49.99990000,
+      "label": "",
+      "vout": 0,
+      "abandoned": false
+    }
+  ],
+  "hex": "030000000001018616bb29336998d3bfb42b92862322885b2de4bcd290ca2d4c7776c4568bdfdc0000000000fdffffff01f0ca052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1702473044022002f370569ef0948becb18eebf8baeb9462864646f9ec44ffcc713a3ba01861ec02207d014729b38d47157012fe5299efc2f0b3dce392db3d911cdfbb9cfb03bc0d8c012102a61d64c7e9f94af0627c717f20d87fdc2492c1adf31d750f049703369e21ee8000000000",
+  "lastprocessedblock": {
+    "hash": "47208e162ebe29c325b03fcf2919d939484fa36f2559103682cde15f3bd45514",
+    "height": 101
+  }
+}
+~/workspace$ bitcoin-cli -regtest createrawtransaction '[{"txid": "d1762b3a9c2f617ccef2d7e5d4f98416a81a85ae4cce4cc529b4836b50b3af55", "vout": 0}]' '[{"bcrt1q7z2p6gg8qp4
+kac9t9rz5q0k8qqnyd8chhvya94": "49.99999"}]'
+020000000155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0118ee052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test signrawtransactionwithwallet 020000000155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0118ee052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000
+{
+  "hex": "0200000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0118ee052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f170247304402207090de3e9314deaaca5c078566dee20b8f01a5545e81c9c0b50889c6759df53f0220669fa38d137b97621d6096e7e77835d16ef580f87c654f1071ed2a6b131470dc0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000",
+  "complete": true
+}
+~/workspace$ bitcoin-cli -regtest sendrawtransaction 0200000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0118ee052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f170247304402207090de3e9314deaaca5c078566dee20b8f01a5545e81c9c0b50889c6759df53f0220669fa38d137b97621d6096e7e77835d16ef580f87c654f1071ed2a6b131470dc0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000
+error code: -26
+error message:
+insufficient fee, rejecting replacement 819ab7c6b81ee8643faf907a5273a410e94ca1991bc31e88567ae4ea36d0f4c1, less fees than conflicting txs; 0.00001 < 0.0001
+~/workspace$ bitcoin-cli -regtest decoderawtransaction 0200000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0118ee052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f170247304402207090de3e9314deaaca5c078566dee20b8f01a5545e81c9c0b50889c6759df53f0220669fa38d137b97621d6096e7e77835d16ef580f87c654f1071ed2a6b131470dc0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000
+{
+  "txid": "819ab7c6b81ee8643faf907a5273a410e94ca1991bc31e88567ae4ea36d0f4c1",
+  "hash": "895842b4e783ddbba4fec1c04627cc9700621462e39962b90362a86e60e09d9f",
+  "version": 2,
+  "size": 191,
+  "vsize": 110,
+  "weight": 437,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "d1762b3a9c2f617ccef2d7e5d4f98416a81a85ae4cce4cc529b4836b50b3af55",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "304402207090de3e9314deaaca5c078566dee20b8f01a5545e81c9c0b50889c6759df53f0220669fa38d137b97621d6096e7e77835d16ef580f87c654f1071ed2a6b131470dc01",
+        "025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c"
+      ],
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 49.99999000,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "0 f0941d2107006b6ee0ab28c5403ec70026469f17",
+        "desc": "addr(bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94)#38lyz477",
+        "hex": "0014f0941d2107006b6ee0ab28c5403ec70026469f17",
+        "address": "bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94",
+        "type": "witness_v0_keyhash"
+      }
+    }
+  ]
+}
+~/workspace$ bitcoin-cli -regtest createrawtransaction '[{"txid": "819ab7c6b81ee8643faf907a5273a410e94ca1991bc31e88567ae4ea36d0f4c1", "vout": 0}]' '[{"bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94": "49.999"}]'
+0200000001c1f4d036eae47a56881ec31b99a14ce910a473527a90af3f64e81eb8c6b79a810000000000fdffffff01606b042a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test signrawtransactionwithwallet 0200000001c1f4d036eae47a56881ec31b99a14ce910a473527a90af3f64e81eb8c6b79a810000000000fdffffff01606b042a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f1700000000 '[{"txid": "819ab7c6b81ee8643faf907a5273a410e94ca1991bc31e88567ae4ea36d0f4c1", "vout": 0, "scriptPubKey": "0014f0941d2107006b6ee0ab28c5403ec70026469f17", "amount": "49.99999"}]'
+{
+  "hex": "02000000000101c1f4d036eae47a56881ec31b99a14ce910a473527a90af3f64e81eb8c6b79a810000000000fdffffff01606b042a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f170247304402203410a6db1940027bbf53a00ac8a8ea611c2fa97b11741a0412ca3f208281a07e02200a31b0fd355467030d7874262a81887725b16188742547b3bca9fd54d2351d3c012102a61d64c7e9f94af0627c717f20d87fdc2492c1adf31d750f049703369e21ee8000000000",
+  "complete": true
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test submitpackage  '["0200000000010155afb3506b83b429c54cce4cae851aa81684f9d4e5d7f2ce7c612f9c3a2b76d10000000000fdffffff0118ee052a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f170247304402207090de3e9314deaaca5c078566dee20b8f01a5545e81c9c0b50889c6759df53f0220669fa38d137b97621d6096e7e77835d16ef580f87c654f1071ed2a6b131470dc0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000", "02000000000101c1f4d036eae47a56881ec31b99a14ce910a473527a90af3f64e81eb8c6b79a810000000000fdffffff01606b042a01000000160014f0941d2107006b6ee0ab28c5403ec70026469f170247304402203410a6db1940027bbf53a00ac8a8ea611c2fa97b11741a0412ca3f208281a07e02200a31b0fd355467030d7874262a81887725b16188742547b3bca9fd54d2351d3c012102a61d64c7e9f94af0627c717f20d87fdc2492c1adf31d750f049703369e21ee8000000000"]'
+{
+  "package_msg": "success",
+  "tx-results": {
+    "895842b4e783ddbba4fec1c04627cc9700621462e39962b90362a86e60e09d9f": {
+      "txid": "819ab7c6b81ee8643faf907a5273a410e94ca1991bc31e88567ae4ea36d0f4c1",
+      "vsize": 110,
+      "fees": {
+        "base": 0.00001000,
+        "effective-feerate": 0.00454545,
+        "effective-includes": [
+          "895842b4e783ddbba4fec1c04627cc9700621462e39962b90362a86e60e09d9f",
+          "d5c4cea05682e19cdd08e0c47acb0df958d5eee32d432804eb817619eb460005"
+        ]
+      }
+    },
+    "d5c4cea05682e19cdd08e0c47acb0df958d5eee32d432804eb817619eb460005": {
+      "txid": "23bd3a2f97ed8798d325b4512a2ace9b5785d53357ad1d9091791fb8f89578e0",
+      "vsize": 110,
+      "fees": {
+        "base": 0.00099000,
+        "effective-feerate": 0.00454545,
+        "effective-includes": [
+          "895842b4e783ddbba4fec1c04627cc9700621462e39962b90362a86e60e09d9f",
+          "d5c4cea05682e19cdd08e0c47acb0df958d5eee32d432804eb817619eb460005"
+        ]
+      }
+    }
+  },
+  "replaced-transactions": [
+    "dcdf8b56c476774c2dca90d2bce42d5b88222386922bb4bfd398693329bb1686",
+    "f702f1ea070cce7f94911a26237b32b22bc34e8a98e2dbbf198c2335ee173ee6"
+  ]
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet -generate 1
+error code: -18
+error message:
+Requested wallet does not exist or is not loaded
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test -generate 1
+{
+  "address": "bcrt1qjznhcs5tp22qr0adxjf9kyfjawqt8ptz24473h",
+  "blocks": [
+    "3dfc3e372c96b8652fb89af15c3452c8fd234d9416e11f552f161ad638c50d51"
+  ]
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test listunspent
+[
+  {
+    "txid": "23bd3a2f97ed8798d325b4512a2ace9b5785d53357ad1d9091791fb8f89578e0",
+    "vout": 0,
+    "address": "bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94",
+    "label": "",
+    "scriptPubKey": "0014f0941d2107006b6ee0ab28c5403ec70026469f17",
+    "amount": 49.99900000,
+    "confirmations": 1,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/0]02a61d64c7e9f94af0627c717f20d87fdc2492c1adf31d750f049703369e21ee80)#mk865egu",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  },
+  {
+    "txid": "989f9fea6b848a83f0f844806f14b3aa7c5b5be231c9ee0154b1e996e3055189",
+    "vout": 0,
+    "address": "bcrt1q9lhvgerldj8jhaj08hz85nkmxpcfrflat2q8lc",
+    "label": "",
+    "scriptPubKey": "00142feec4647f6c8f2bf64f3dc47a4edb307091a7fd",
+    "amount": 50.00000000,
+    "confirmations": 101,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/1]025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c)#5c7kmqmx",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  }
+]
+~/workspace$ bitcoin-cli -regtest createrawtransaction '[{"txid": "989f9fea6b848a83f
+0f844806f14b3aa7c5b5be231c9ee0154b1e996e3055189", "vout": 0}]' '[{"^C
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test newaddress
+error code: -32601
+error message:
+Method not found
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test getnewaddress
+bcrt1qhcx9h9pzsw0wjkwks0ma8es3snatnfgc6hu5nl
+~/workspace$ bitcoin-cli -regtest createrawtransaction '[{"txid": "989f9fea6b848a83f 
+0f844806f14b3aa7c5b5be231c9ee0154b1e996e3055189", "vout": 0}]' '[{"^C
+~/workspace$ bitcoin-cli -regtest createrawtransaction '[{"txid": "989f9fea6b848a83f0f844806f14b3aa7c5b5be231c9ee0154b1e996e3055189", "vout": 0}]' '[{"bcrt1qhcx9h9pzsw0wjkwks0ma8es3snatnfgc6hu5nl": 49.99999760}, {"bcrt1pfeesnyr2tx": "0.00000240"}]'
+0200000001895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdffffff0210f1052a01000000160014be0c5b9422839ee959d683f7d3e61184fab9a518f0000000000000000451024e7300000000
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test signrawtransactionwithwallet 03000
+00001895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdfff
+fff0210f1052a01000000160014be0c5b9422839ee959d683f7d3e61184fab9a518f0000000000000000
+451024e7300000000
+{
+  "hex": "03000000000101895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdffffff0210f1052a01000000160014be0c5b9422839ee959d683f7d3e61184fab9a518f0000000000000000451024e73024730440220566d3a889dc8722486085fc44582650009e544c5f4a5b13533626d60524ebc87022076fcd395c9eda2b0deecf2c12df913e28f4f7a942085d22326d31089efc2a10d0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000",
+  "complete": true
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test sendrawtransaction 03000000000101895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdffffff0210f1052a01000000160014be0c5b9422839ee959d683f7d3e61184fab9a518f0000000000000000451024e73024730440220566d3a889dc8722486085fc44582650009e544c5f4a5b13533626d60524ebc87022076fcd395c9eda2b0deecf2c12df913e28f4f7a942085d22326d31089efc2a10d0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000 "0"
+error code: -26
+error message:
+min relay fee not met, 0 < 123
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test -generate 2
+{
+  "address": "bcrt1qh0t5fsf6wk42y64lrkv48rq3vx6xc2va0r866m",
+  "blocks": [
+    "68fcaa99ca1deb526edddb70b2d4ea4060746a2d5f76fb787c73715516bd2079",
+    "6216ee5a8dd64e0c5cc07976262b22f993f0c66a5f306c02780a6b393596b67e"
+  ]
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test listunspent
+[
+  {
+    "txid": "23bd3a2f97ed8798d325b4512a2ace9b5785d53357ad1d9091791fb8f89578e0",
+    "vout": 0,
+    "address": "bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94",
+    "label": "",
+    "scriptPubKey": "0014f0941d2107006b6ee0ab28c5403ec70026469f17",
+    "amount": 49.99900000,
+    "confirmations": 3,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/0]02a61d64c7e9f94af0627c717f20d87fdc2492c1adf31d750f049703369e21ee80)#mk865egu",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  },
+  {
+    "txid": "989f9fea6b848a83f0f844806f14b3aa7c5b5be231c9ee0154b1e996e3055189",
+    "vout": 0,
+    "address": "bcrt1q9lhvgerldj8jhaj08hz85nkmxpcfrflat2q8lc",
+    "label": "",
+    "scriptPubKey": "00142feec4647f6c8f2bf64f3dc47a4edb307091a7fd",
+    "amount": 50.00000000,
+    "confirmations": 103,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/1]025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c)#5c7kmqmx",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  },
+  {
+    "txid": "1203a612b11d55fd391e62720f145e8166d91e5883b458eda61074b7e37405ae",
+    "vout": 0,
+    "address": "bcrt1q9lhvgerldj8jhaj08hz85nkmxpcfrflat2q8lc",
+    "label": "",
+    "scriptPubKey": "00142feec4647f6c8f2bf64f3dc47a4edb307091a7fd",
+    "amount": 50.00000000,
+    "confirmations": 102,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/1]025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c)#5c7kmqmx",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  },
+  {
+    "txid": "1a4baf3cc9e9da1bef4999b4479124247445604dc494ed4e67d497b3e9e000b1",
+    "vout": 0,
+    "address": "bcrt1q9lhvgerldj8jhaj08hz85nkmxpcfrflat2q8lc",
+    "label": "",
+    "scriptPubKey": "00142feec4647f6c8f2bf64f3dc47a4edb307091a7fd",
+    "amount": 50.00000000,
+    "confirmations": 101,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/1]025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c)#5c7kmqmx",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  }
+]
+~/workspace$ bitcoin-cli -regtest decoderawtransaction 02000000014b421aa4622233390cdb87ea39e91760e69eeb10db4222e31cf354536a3beefd0100000000fdffffff010000000000000000056a03feeeee00000000
+{
+  "txid": "8d092b61ef3c1a58c24915671b91fbc6a89962912264afabc071a4dbfd1a484e",
+  "hash": "8d092b61ef3c1a58c24915671b91fbc6a89962912264afabc071a4dbfd1a484e",
+  "version": 2,
+  "size": 65,
+  "vsize": 65,
+  "weight": 260,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "fdee3b6a5354f31ce32242db10eb9ee66017e939ea87db0c39332262a41a424b",
+      "vout": 1,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 0.00000000,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "OP_RETURN -7270142",
+        "desc": "raw(6a03feeeee)#axe7kzjv",
+        "hex": "6a03feeeee",
+        "type": "nulldata"
+      }
+    }
+  ]
+}
+~/workspace$ bitcoin-cli -regtest decoderawtransaction 03000000000101895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdffffff0210f1052a01000000160014be0c5b9422839ee959d683f7d3e61184fab9a518f0000000000000000451024e73024730440220566d3a889dc8722486085fc44582650009e544c5f4a5b13533626d60524ebc87022076fcd395c9eda2b0deecf2c12df913e28f4f7a942085d22326d31089efc2a10d0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000
+{
+  "txid": "26d97ec443ab0f8bfa608515c40efaabb550b7230b9be65b57e6a6424e256f9b",
+  "hash": "c3f973cd8bb7a652ce06722b0c67ef3b2f5f36565d6d2946efa259b2ff1da52c",
+  "version": 3,
+  "size": 204,
+  "vsize": 123,
+  "weight": 489,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "989f9fea6b848a83f0f844806f14b3aa7c5b5be231c9ee0154b1e996e3055189",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "30440220566d3a889dc8722486085fc44582650009e544c5f4a5b13533626d60524ebc87022076fcd395c9eda2b0deecf2c12df913e28f4f7a942085d22326d31089efc2a10d01",
+        "025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c"
+      ],
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 49.99999760,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "0 be0c5b9422839ee959d683f7d3e61184fab9a518",
+        "desc": "addr(bcrt1qhcx9h9pzsw0wjkwks0ma8es3snatnfgc6hu5nl)#hg9dq52q",
+        "hex": "0014be0c5b9422839ee959d683f7d3e61184fab9a518",
+        "address": "bcrt1qhcx9h9pzsw0wjkwks0ma8es3snatnfgc6hu5nl",
+        "type": "witness_v0_keyhash"
+      }
+    },
+    {
+      "value": 0.00000240,
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "1 29518",
+        "desc": "addr(bcrt1pfeesnyr2tx)#swxgse0y",
+        "hex": "51024e73",
+        "address": "bcrt1pfeesnyr2tx",
+        "type": "anchor"
+      }
+    }
+  ]
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test listunspent
+[
+  {
+    "txid": "23bd3a2f97ed8798d325b4512a2ace9b5785d53357ad1d9091791fb8f89578e0",
+    "vout": 0,
+    "address": "bcrt1q7z2p6gg8qp4kac9t9rz5q0k8qqnyd8chhvya94",
+    "label": "",
+    "scriptPubKey": "0014f0941d2107006b6ee0ab28c5403ec70026469f17",
+    "amount": 49.99900000,
+    "confirmations": 3,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/0]02a61d64c7e9f94af0627c717f20d87fdc2492c1adf31d750f049703369e21ee80)#mk865egu",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  },
+  {
+    "txid": "989f9fea6b848a83f0f844806f14b3aa7c5b5be231c9ee0154b1e996e3055189",
+    "vout": 0,
+    "address": "bcrt1q9lhvgerldj8jhaj08hz85nkmxpcfrflat2q8lc",
+    "label": "",
+    "scriptPubKey": "00142feec4647f6c8f2bf64f3dc47a4edb307091a7fd",
+    "amount": 50.00000000,
+    "confirmations": 103,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/1]025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c)#5c7kmqmx",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  },
+  {
+    "txid": "1203a612b11d55fd391e62720f145e8166d91e5883b458eda61074b7e37405ae",
+    "vout": 0,
+    "address": "bcrt1q9lhvgerldj8jhaj08hz85nkmxpcfrflat2q8lc",
+    "label": "",
+    "scriptPubKey": "00142feec4647f6c8f2bf64f3dc47a4edb307091a7fd",
+    "amount": 50.00000000,
+    "confirmations": 102,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/1]025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c)#5c7kmqmx",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  },
+  {
+    "txid": "1a4baf3cc9e9da1bef4999b4479124247445604dc494ed4e67d497b3e9e000b1",
+    "vout": 0,
+    "address": "bcrt1q9lhvgerldj8jhaj08hz85nkmxpcfrflat2q8lc",
+    "label": "",
+    "scriptPubKey": "00142feec4647f6c8f2bf64f3dc47a4edb307091a7fd",
+    "amount": 50.00000000,
+    "confirmations": 101,
+    "spendable": true,
+    "solvable": true,
+    "desc": "wpkh([0dc78544/84h/1h/0h/0/1]025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c)#5c7kmqmx",
+    "parent_descs": [
+      "wpkh(tpubD6NzVbkrYhZ4WRjf2DV6TfdJHgFh6rPvVeevB41fGyQJYa7pN5UxATeQ2ucH3kk324HMPGKgP4a14ey66BSJuAhy59ZU3Zzpcre5onEfTZB/84h/1h/0h/0/*)#d2swqvjg"
+    ],
+    "safe": true
+  }
+]
+~/workspace$ bitcoin-cli -regtest createrawtransaction '[{"txid": "26d97ec443ab0f8bfa608515c40efaabb550b7230b9be65b57e6a6424e256f9b", "vout": 1}, {"txid": "989f9fea6b84
+8a83f0f844806f14b3aa7c5b5be231c9ee0154b1e996e3055189", "vout": 0}]' '[{"bcrt1q9lhvge
+rldj8jhaj08hz85nkmxpcfrflat2q8lc": "49.999"}]'
+02000000029b6f254e42a6e6575be69b0b23b750b5abfa0ec4158560fa8b0fab43c47ed9260100000000fdffffff895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdffffff01606b042a010000001600142feec4647f6c8f2bf64f3dc47a4edb307091a7fd00000000
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test signrawtransactionwithwallet 03000000029b6f254e42a6e6575be69b0b23b750b5abfa0ec4158560fa8b0fab43c47ed9260100000000fdffffff895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdffffff01606b042a010000001600142feec4647f6c8f2bf64f3dc47a4edb307091a7fd00000000 '[{"txid": "26d97ec443ab0f8bfa608515c40efaabb550b7230b9be65b57e6a6424e256f9b", "vout": 1, "sriptPubKey": "51024e73", amount: 0.00000240}]'
+error: Error parsing JSON: [{"txid": "26d97ec443ab0f8bfa608515c40efaabb550b7230b9be65b57e6a6424e256f9b", "vout": 1, "sriptPubKey": "51024e73", amount: 0.00000240}]
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test signrawtransactionwithwallet 03000000029b6f254e42a6e6575be69b0b23b750b5abfa0ec4158560fa8b0fab43c47ed9260100000000fdffffff895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdffffff01606b042a010000001600142feec4647f6c8f2bf64f3dc47a4edb307091a7fd00000000 '[{"txid": "26d97ec443ab0f8bfa608515c40efaabb550b7230b9be65b57e6a6424e256f9b", "vout": 1, "sriptPubKey": "51024e73", "amount": 0.00000240}]'
+error code: -3
+error message:
+Missing scriptPubKey
+~/workspace$ bitcoin-cli -regtest -rpcwallet=test signrawtransactionwithwallet 03000000029b6f254e42a6e6575be69b0b23b750b5abfa0ec4158560fa8b0fab43c47ed9260100000000fdffffff895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdffffff01606b042a010000001600142feec4647f6c8f2bf64f3dc47a4edb307091a7fd00000000 '[{"txid": "26d97ec443ab0f8bfa608515c40efaabb550b7230b9be65b57e6a6424e256f9b", "vout": 1, "scr
+iptPubKey": "51024e73", "amount": 0.00000240}]'
+{
+  "hex": "030000000001029b6f254e42a6e6575be69b0b23b750b5abfa0ec4158560fa8b0fab43c47ed9260100000000fdffffff895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdffffff01606b042a010000001600142feec4647f6c8f2bf64f3dc47a4edb307091a7fd000247304402200c7a31be522451a9f4df366052c14d42ad8b0e33b85c33789c8be1fec341d4c5022053c2552ed5e6259845dc417cec23e368ed10ed4bfef5358f3179dae5956001460121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000",
+  "complete": true
+}
+~/workspace$ bitcoin-cli -regtest -rpcwallet submitpackage '["03000000000101895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdffffff0210f1052a01000000160014be0c5b9422839ee959d683f7d3e61184fab9a518f0000000000000000451024e73024730440220566d3a889dc8722486085fc44582650009e544c5f4a5b13533626d60524ebc87022076fcd395c9eda2b0deecf2c12df913e28f4f7a942085d22326d31089efc2a10d0121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000", "030000000001029b6f254e42a6e6575be69b0b23b750b5abfa0ec4158560fa8b0fab43c47ed9260100000000fdffffff895105e396e9b15401eec931e25b5b7caab3146f8044f8f0838a846bea9f9f980000000000fdffffff01606b042a010000001600142feec4647f6c8f2bf64f3dc47a4edb307091a7fd000247304402200c7a31be522451a9f4df366052c14d42ad8b0e33b85c33789c8be1fec341d4c5022053c2552ed5e6259845dc417cec23e368ed10ed4bfef5358f3179dae5956001460121025b4ce11e3f7aa35e800e41926cc58867a7f7a9b95e27bfd1f3884c773c91e93c00000000"]'

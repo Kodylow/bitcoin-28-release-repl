@@ -1,0 +1,13 @@
+run = "direnv allow && nix develop --command just bitcoind-28"
+entrypoint = "README.md"
+
+[nix]
+channel = "stable-24_05"
+
+[[ports]]
+localPort = 8333
+externalPort = 80
+
+[[ports]]
+localPort = 18444
+externalPort = 3000
